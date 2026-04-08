@@ -3,11 +3,14 @@ import Banner from "@/components/banner/banner.jsx";
 import Titulo from "@/components/titulo/titulo.jsx";
 import { useParams } from "react-router-dom";
 import videos from "@/pages/db.json";
+import NaoEncontrada from "@/pages/naoEncontrada/naoEncontrada";
 
 function Player() {
   const param = useParams();
   const video = videos.find((video) => video.id === Number(param.id));
-
+  if (!video) {
+    return <NaoEncontrada />;
+  }
   return (
     <>
       <Banner imagem="player" />
