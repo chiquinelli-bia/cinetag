@@ -1,6 +1,6 @@
 import Banner from "@/components/banner/banner.jsx";
 import Titulo from "@/components/titulo/titulo.jsx";
-import videos from "./db.json";
+import videos from "@/pages/db.json";
 import styles from "./inicio.module.css";
 import Card from "@/components/card/card.jsx";
 
