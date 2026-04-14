@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 700px) {
+  .capa {
+    height: 210px;
+  }
 }
 @media screen and (max-width: 400px) {
   .capa {
