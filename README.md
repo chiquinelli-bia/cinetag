@@ -1,16 +1,83 @@
-# React + Vite
+# CineTag
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Thumbnail do projeto. O título é “Cinetag - Praticando React com JS” e o Subtítulo é “adaptado por Bianca Chiquinelli.”](./Front-end-Cinetag.png)
 
-Currently, two official plugins are available:
+O CineTag é uma plataforma fictícia de streaming focada em conteúdos de tecnologia, com navegação dinâmica entre páginas e interação com um catálogo de vídeos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**A aplicação inclui funcionalidades como:**
 
-## React Compiler
+- Navegação entre páginas com roteamento dinâmico
+- Visualização de vídeos em página de player
+- Marcação e listagem de vídeos favoritos
+- Tratamento de rotas inexistentes (página de erro)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Minhas Contribuições
 
-## Expanding the ESLint configuration
+- Estruturação de rotas com separação de responsabilidades via PaginaBase
+- Gerenciamento de estado global com `Context API` para funcionalidade de favoritos
+- Consumo e adaptação de API fake remota
+- Renderização dinâmica de componentes a partir de dados
+- Implementação de páginas:
+  - Player de vídeo
+  - Página de erro (fallback de rota)
+- Separação de responsabilidades entre páginas e componentes
+<p align="center">
+  <img src="https://i.imgur.com/E6OwqBI.png" alt="Interface inicial da plataforma CineTag, exibindo cabeçalho com navegação (Home e Favoritos), banner em destaque e seção principal com o título “Um lugar para guardar seus vídeos e filmes”, seguida por uma grade de cards com thumbnails de conteúdos tecnológicos." width="430" />
+  <img src="https://i.imgur.com/22GxHao.png" alt="Tela de player da plataforma CineTag, com cabeçalho de navegação, banner superior e seção central exibindo um vídeo incorporado com thumbnail e botão de reprodução, acompanhado do título da página “Player”." width="430" />
+</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologias Utilizadas
+
+- React
+- Vite
+- React Router DOM
+
+## ⚙️ Técnicas e abordagens
+
+- **Gerenciamento de estado:** uso de `Context API` para controle global da lista de favoritos, evitando prop drilling e centralizando a lógica de atualização
+- **Fluxo de dados:** consumo de API remota com `useEffect`e renderização reativa via`map`
+- **Arquitetura de componentes:** separação entre páginas e componentes reutilizáveis, com abstração de layout via PaginaBase
+- **Roteamento:** navegação com `React Router DOM`, incluindo rotas dinâmicas e fallback
+- **Responsividade:** adaptação do layout para dispositivos móveis (até 700px)
+- **Manutenibilidade:** refatoração de componentes após integração com API e correções estruturais (imports, case-sensitive, organização de pastas)
+
+## Como Ter Acesso ao Projeto
+
+- **Versão online**: [Clique aqui](https://cinetag-two-theta.vercel.app/)
+- **Rodar localmente**:
+
+1. Clone este repositório:
+
+```bash
+   git clone https://github.com/chiquinelli-bia/cinetag.git
+
+```
+
+2. Acesse a pasta do projeto:
+
+   ```bash
+   cd cinetag
+
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+
+   ```
+
+5. Abra no navegador o endereço exibido no terminal e Navegue pelas funcionalidades implementadas.
+
+## Créditos
+
+- Projeto base: ![Acesse aqui.](https://github.com/alura-cursos/cinetag/tree/arquivos-iniciais)
+- Curso: ![praticando react com js](https://cursos.alura.com.br/course/react-praticando-react-js)
+- Este repositório destaca **apenas minhas contribuições** ao projeto
