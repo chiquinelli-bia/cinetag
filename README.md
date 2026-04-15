@@ -22,8 +22,8 @@ O CineTag é uma plataforma fictícia de streaming focada em conteúdos de tecno
   - Página de erro (fallback de rota)
 - Separação de responsabilidades entre páginas e componentes
 <p align="center">
-  <img src="https://i.imgur.com/E6OwqBI.png" alt="Interface inicial da plataforma CineTag, exibindo cabeçalho com navegação (Home e Favoritos), banner em destaque e seção principal com o título “Um lugar para guardar seus vídeos e filmes”, seguida por uma grade de cards com thumbnails de conteúdos tecnológicos." width="430" />
-  <img src="https://i.imgur.com/22GxHao.png" alt="Tela de player da plataforma CineTag, com cabeçalho de navegação, banner superior e seção central exibindo um vídeo incorporado com thumbnail e botão de reprodução, acompanhado do título da página “Player”." width="430" />
+  <img src="https://i.imgur.com/E6OwqBI.png" alt="Interface inicial da plataforma CineTag, exibindo cabeçalho com navegação (Home e Favoritos), banner em destaque e seção principal com o título “Um lugar para guardar seus vídeos e filmes”, seguida por uma grade de cards com thumbnails de conteúdos tecnológicos." width="420" />
+  <img src="https://i.imgur.com/22GxHao.png" alt="Tela de player da plataforma CineTag, com cabeçalho de navegação, banner superior e seção central exibindo um vídeo incorporado com thumbnail e botão de reprodução, acompanhado do título da página “Player”." width="420" />
 </p>
 
 ## Tecnologias Utilizadas
